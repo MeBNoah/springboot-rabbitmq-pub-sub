@@ -20,7 +20,7 @@ public class Sender {
 
 	@Scheduled(fixedRate = 100)
 	private void publish() {
-		final String message = new String("message from publisher to subribers, sent at " + new SimpleDateFormat("dd-MM-yy:HH:mm:SSS").format(new Date()));
+		final String message = new String("message from publisher to subribers, sent at " + new SimpleDateFormat("dd-MM-yy:HH:mm:ss:SSS").format(new Date()));
 		send(message);
 	}
 
