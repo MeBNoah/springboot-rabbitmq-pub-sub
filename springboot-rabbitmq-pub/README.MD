@@ -7,7 +7,7 @@ Example Java Spring Boot application which can run locally and on Cloud Foundry.
 * `PORT=3000 mvn clean spring-boot:run`
 
 ## Run on Cloud Foundry
-* `mvn clean install`
+* `mvn clean install -DskipTests`
 * create a rabbitmq service in Cloud Foundry named `rabbitmq`
 * `cf push`
 
